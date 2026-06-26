@@ -1,0 +1,17 @@
+C:\Users\hugoa\OneDrive\Desktop\webapp_ERP\ERP\src\main\java\com\sistema\ERP\Controller\CadastroController.java
+C:\Users\hugoa\OneDrive\Desktop\webapp_ERP\ERP\src\main\java\com\sistema\ERP\Controller\LoginController.java
+C:\Users\hugoa\OneDrive\Desktop\webapp_ERP\ERP\src\main\java\com\sistema\ERP\Controller\NavegacaoController.java
+C:\Users\hugoa\OneDrive\Desktop\webapp_ERP\ERP\src\main\java\com\sistema\ERP\DTO\LoginDTO.java
+C:\Users\hugoa\OneDrive\Desktop\webapp_ERP\ERP\src\main\java\com\sistema\ERP\DTO\UsuarioDTO.java
+C:\Users\hugoa\OneDrive\Desktop\webapp_ERP\ERP\src\main\java\com\sistema\ERP\Entity\Clientes.java
+C:\Users\hugoa\OneDrive\Desktop\webapp_ERP\ERP\src\main\java\com\sistema\ERP\Entity\OperadoresLogistica.java
+C:\Users\hugoa\OneDrive\Desktop\webapp_ERP\ERP\src\main\java\com\sistema\ERP\Entity\Usuarios.java
+C:\Users\hugoa\OneDrive\Desktop\webapp_ERP\ERP\src\main\java\com\sistema\ERP\Enums\NivelAcessoEnum.java
+C:\Users\hugoa\OneDrive\Desktop\webapp_ERP\ERP\src\main\java\com\sistema\ERP\Enums\TipoContratoEnum.java
+C:\Users\hugoa\OneDrive\Desktop\webapp_ERP\ERP\src\main\java\com\sistema\ERP\ErpApplication.java
+C:\Users\hugoa\OneDrive\Desktop\webapp_ERP\ERP\src\main\java\com\sistema\ERP\Repository\ClientesRepository.java
+C:\Users\hugoa\OneDrive\Desktop\webapp_ERP\ERP\src\main\java\com\sistema\ERP\Repository\OperadoresRepository.java
+C:\Users\hugoa\OneDrive\Desktop\webapp_ERP\ERP\src\main\java\com\sistema\ERP\Repository\UsuariosRepository.java
+C:\Users\hugoa\OneDrive\Desktop\webapp_ERP\ERP\src\main\java\com\sistema\ERP\Security\SecurityConfig.java
+C:\Users\hugoa\OneDrive\Desktop\webapp_ERP\ERP\src\main\java\com\sistema\ERP\Service\CadastroService.java
+C:\Users\hugoa\OneDrive\Desktop\webapp_ERP\ERP\src\main\java\com\sistema\ERP\Service\LoginService.java

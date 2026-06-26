@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Financeiro</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+        ERP LOGÍSTICA
+    </div>
+
+    <nav>
+        <a href="#" onclick="carregarPagina('Dashboard')">📊 Dashboard</a>
+        <a href="#" onclick="carregarPagina('Equipes')">👥 Equipes e Funcionários</a>
+        <a href="#" onclick="carregarPagina('Financeiro')">💰 Financeiro</a>
+        <a href="#" onclick="carregarPagina('Documentos')">📄 Documentos Internos</a>
+        <a href="#" onclick="carregarPagina('Clientes')">🤝 Clientes</a>
+        <a href="#" onclick="carregarPagina('Recursos')">📦 Recursos</a>
+    </nav>
+    </nav>
+
+</div>
+
+<div class="main">
+
+    <header>
+
+        <h1>Financeiro</h1>
+
+        <div class="user-area">
+            <button class="account-btn">
+                Minha Conta
+            </button>
+        </div>
+
+    </header>
+
+    <div class="financial-container">
+
+        <div class="accordion">
+
+            <button class="accordion-btn">
+                Pagamentos de Clientes
+            </button>
+
+            <div class="accordion-content">
+
+                <table class="finance-table">
+
+                    <thead>
+                        <tr>
+                            <th>Cliente</th>
+                            <th>Valor</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Empresa Alpha</td>
+                            <td>R$ 4.500</td>
+                            <td>Pago</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+        <div class="accordion">
+
+            <button class="accordion-btn">
+                Salários dos Funcionários
+            </button>
+
+            <div class="accordion-content">
+
+                <table class="finance-table">
+
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Cargo</th>
+                            <th>Salário</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>João</td>
+                            <td>Motorista</td>
+                            <td>R$ 3.800</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/navegacao.js">
+document.querySelectorAll(".accordion-btn").forEach(btn => {
+
+    btn.addEventListener("click", () => {
+
+        const content = btn.nextElementSibling;
+
+        content.style.display =
+        content.style.display === "block"
+        ? "none"
+        : "block";
+
+    });
+
+});
+</script>
+
+</body>
+</html>

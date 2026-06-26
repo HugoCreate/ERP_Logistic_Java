@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP Logística</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo">
+            ERP LOGÍSTICA
+        </div>
+
+        <nav>
+            <a href="#" onclick="carregarPagina('Dashboard')">📊 Dashboard</a>
+            <a href="#" onclick="carregarPagina('Equipes')">👥 Equipes e Funcionários</a>
+            <a href="#" onclick="carregarPagina('Financeiro')">💰 Financeiro</a>
+            <a href="#" onclick="carregarPagina('Documentos')">📄 Documentos Internos</a>
+            <a href="#" onclick="carregarPagina('Clientes')">🤝 Clientes</a>
+            <a href="#" onclick="carregarPagina('Recursos')">📦 Recursos</a>
+        </nav>
+    </div>
+
+    <div class="main">
+
+        <header>
+            <h1>Dashboard</h1>
+
+            <div class="user-area">
+
+                <!-- Exibir quando NÃO estiver logado -->
+                <button class="login-btn">
+                    <a href="#" style="color: inherit; text-decoration: none;">Login</a>
+                </button>
+
+                <!-- Exibir quando estiver logado -->
+                <!--
+                <button class="account-btn">
+                    Minha Conta
+                </button>
+                -->
+
+            </div>
+        </header>
+
+        <section class="cards">
+
+            <div class="card">
+                <h2>Equipes</h2>
+                <p>Gerencie colaboradores.</p>
+            </div>
+
+            <div class="card">
+                <h2>Financeiro</h2>
+                <p>Controle financeiro.</p>
+            </div>
+
+            <div class="card">
+                <h2>Documentos</h2>
+                <p>Arquivos internos.</p>
+            </div>
+
+            <div class="card">
+                <h2>Clientes</h2>
+                <p>Cadastros e histórico.</p>
+            </div>
+
+            <div class="card">
+                <h2>Recursos</h2>
+                <p>Gestão operacional.</p>
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="/navegacao.js"></script>
+</body>
+</html>

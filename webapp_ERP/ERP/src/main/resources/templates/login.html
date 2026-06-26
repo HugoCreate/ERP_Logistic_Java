@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ERP Logística</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="auth-body">
+
+    <div class="auth-container">
+
+        <div class="auth-logo">
+            ERP LOGÍSTICA
+        </div>
+
+        <form id="loginForm" class="auth-form">
+
+            <h2>Entrar</h2>
+
+            <div class="input-group">
+                <label>E-mail</label>
+                <input type="email" name="email_in" id="email_input" placeholder="Digite seu e-mail">
+            </div>
+
+            <div class="input-group">
+                <label>Senha</label>
+                <input type="password" name="senha_in" id="senha_input" placeholder="Digite sua senha">
+            </div>
+
+            <button type="submit" class="auth-btn">
+                Entrar
+            </button>
+
+            <p class="auth-link">
+                Não possui conta?
+                <a href="#" onclick="navegarCadastro()">Cadastrar usuário</a>
+            </p>
+
+        </form>
+
+    </div>
+    <script src="/login.js"></script>
+</body>
+</html>

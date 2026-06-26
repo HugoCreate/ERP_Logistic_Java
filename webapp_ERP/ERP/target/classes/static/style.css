@@ -1,0 +1,631 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    background:#1b1b1b;
+    color:white;
+    display:flex;
+    min-height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width:260px;
+    background:#242424;
+    border-right:1px solid #333;
+    display:flex;
+    flex-direction:column;
+}
+
+.logo{
+    padding:25px;
+    font-size:22px;
+    font-weight:bold;
+    color:#ff7a00;
+    border-bottom:1px solid #333;
+}
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    margin-top:15px;
+}
+
+.sidebar nav a{
+    text-decoration:none;
+    color:#d0d0d0;
+    padding:18px 25px;
+    transition:0.3s;
+}
+
+.sidebar nav a:hover{
+    background:#ff7a00;
+    color:white;
+}
+
+/* MAIN */
+
+.main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+/* TOPBAR */
+
+header{
+    height:75px;
+    background:#242424;
+    border-bottom:1px solid #333;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 30px;
+}
+
+header h1{
+    font-size:24px;
+    color:#ff7a00;
+}
+
+.user-area{
+    display:flex;
+    gap:10px;
+}
+
+.login-btn,
+.account-btn{
+
+    background:#ff7a00;
+    border:none;
+
+    color:white;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.login-btn:hover,
+.account-btn:hover{
+    background:#ff922e;
+}
+
+/* CARDS */
+
+.cards{
+
+    padding:30px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+}
+
+.card{
+
+    background:#2b2b2b;
+
+    border:1px solid #3b3b3b;
+
+    border-left:5px solid #ff7a00;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+    cursor:pointer;
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 20px rgba(255,122,0,.2);
+}
+
+.card h2{
+
+    color:#ff7a00;
+
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#c0c0c0;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    body{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+}
+
+/* ==========================
+   LOGIN E CADASTRO
+========================== */
+
+.auth-body{
+
+    background:#1b1b1b;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+}
+
+.auth-container{
+
+    width:100%;
+    max-width:450px;
+
+    padding:20px;
+}
+
+.auth-logo{
+
+    text-align:center;
+
+    color:#ff7a00;
+
+    font-size:32px;
+
+    font-weight:bold;
+
+    margin-bottom:25px;
+}
+
+.auth-form{
+
+    background:#242424;
+
+    border:1px solid #333;
+
+    border-radius:15px;
+
+    padding:35px;
+}
+
+.auth-form h2{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    color:#ff7a00;
+}
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:18px;
+}
+
+.input-group label{
+
+    margin-bottom:6px;
+
+    color:#d5d5d5;
+
+    font-size:14px;
+}
+
+.input-group input{
+
+    background:#2d2d2d;
+
+    color:white;
+
+    border:1px solid #444;
+
+    border-radius:8px;
+
+    padding:12px;
+}
+
+.input-group input:focus{
+
+    outline:none;
+
+    border-color:#ff7a00;
+
+    box-shadow:0 0 8px rgba(255,122,0,.3);
+}
+
+.auth-btn{
+
+    width:100%;
+
+    padding:14px;
+
+    background:#ff7a00;
+
+    border:none;
+
+    border-radius:8px;
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    margin-top:10px;
+
+    transition:.3s;
+}
+
+.auth-btn:hover{
+
+    background:#ff922e;
+}
+
+.auth-link{
+
+    text-align:center;
+
+    margin-top:20px;
+
+    color:#bdbdbd;
+}
+
+.auth-link a{
+
+    color:#ff7a00;
+
+    text-decoration:none;
+
+    font-weight:600;
+}
+
+.auth-link a:hover{
+
+    text-decoration:underline;
+}
+
+/* ==========================
+   AJUSTES GERAIS ERP
+========================== */
+
+.main{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    overflow:auto;
+}
+
+/* ==========================
+   MÓDULO FINANCEIRO
+========================== */
+
+.financial-container{
+
+    width:100%;
+
+    padding:30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+}
+
+.financial-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:10px;
+}
+
+.financial-header h1,
+.financial-header h2{
+
+    color:#ff7a00;
+}
+
+/* ==========================
+   BOTÕES ADMINISTRATIVOS
+========================== */
+
+.admin-actions{
+
+    display:flex;
+
+    gap:10px;
+}
+
+.admin-btn{
+
+    background:#ff7a00;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 15px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.admin-btn:hover{
+
+    background:#ff922e;
+}
+
+.danger-btn{
+
+    background:#c62828;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 15px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.danger-btn:hover{
+
+    background:#e53935;
+}
+
+/* ==========================
+   ACCORDION DAS TABELAS
+========================== */
+
+.accordion{
+
+    width:100%;
+}
+
+.accordion-btn{
+
+    width:100%;
+
+    background:#2f2f2f;
+
+    color:white;
+
+    border:none;
+
+    padding:18px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    text-align:left;
+
+    cursor:pointer;
+
+    border-left:5px solid #ff7a00;
+
+    border-radius:8px;
+
+    transition:.3s;
+}
+
+.accordion-btn:hover{
+
+    background:#383838;
+}
+
+.accordion-content{
+
+    display:none;
+
+    background:#2b2b2b;
+
+    border:1px solid #444;
+
+    border-top:none;
+
+    padding:15px;
+
+    border-radius:0 0 8px 8px;
+}
+
+/* ==========================
+   TABELAS FINANCEIRAS
+========================== */
+
+.finance-table{
+
+    width:100%;
+
+    min-width:800px;
+
+    border-collapse:collapse;
+
+    background:#2b2b2b;
+}
+
+.finance-table th{
+
+    background:#ff7a00;
+
+    color:white;
+
+    padding:12px;
+
+    text-align:left;
+}
+
+.finance-table td{
+
+    padding:12px;
+
+    border-bottom:1px solid #444;
+}
+
+.finance-table tr:hover{
+
+    background:#343434;
+}
+
+/* ==========================
+   SCROLL HORIZONTAL
+========================== */
+
+.table-wrapper{
+
+    overflow-x:auto;
+}
+
+/* ==========================
+   RESPONSIVIDADE
+========================== */
+
+@media(max-width:768px){
+
+    .financial-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+    }
+
+    .admin-actions{
+
+        flex-wrap:wrap;
+    }
+
+}
+
+/* ==========================
+   SELECT DOS FORMULÁRIOS
+========================== */
+
+.form-select{
+
+    width:100%;
+
+    padding:12px;
+
+    background:#2d2d2d;
+
+    color:white;
+
+    border:1px solid #444;
+
+    border-radius:8px;
+
+    font-size:14px;
+
+    transition:.3s;
+}
+
+.form-select:focus{
+
+    outline:none;
+
+    border-color:#ff7a00;
+
+    box-shadow:0 0 8px rgba(255,122,0,.3);
+}
+
+.form-select option{
+
+    background:#2d2d2d;
+
+    color:white;
+}
+
+/* ==========================
+   AJUSTE PARA FORMULÁRIOS
+========================== */
+
+.auth-form{
+
+    background:#242424;
+
+    border:1px solid #333;
+
+    border-radius:15px;
+
+    padding:35px;
+
+    max-height:85vh;
+
+    overflow-y:auto;
+}
+
+/* SCROLL PERSONALIZADA */
+
+.auth-form::-webkit-scrollbar{
+
+    width:8px;
+}
+
+.auth-form::-webkit-scrollbar-track{
+
+    background:#242424;
+}
+
+.auth-form::-webkit-scrollbar-thumb{
+
+    background:#ff7a00;
+
+    border-radius:10px;
+}

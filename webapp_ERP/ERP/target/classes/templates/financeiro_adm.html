@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Financeiro Admin</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+        ERP LOGÍSTICA
+    </div>
+
+    <nav>
+        <a onclick="carregarPagina('Dashboard')">📊 Dashboard</a>
+        <a onclick="carregarPagina('Equipes')">👥 Equipes e Funcionários</a>
+        <a onclick="carregarPagina('Financeiro')">💰 Financeiro</a>
+        <a onclick="carregarPagina('Documentos')">📄 Documentos Internos</a>
+        <a onclick="carregarPagina('Clientes')">🤝 Clientes</a>
+        <a onclick="carregarPagina('Recursos')">📦 Recursos</a>
+    </nav>
+
+</div>
+
+<div class="main">
+
+    <header>
+
+        <h1>Financeiro - Administração</h1>
+
+        <div class="user-area">
+
+            <button class="account-btn">
+                Minha Conta
+            </button>
+
+        </div>
+
+    </header>
+
+    <div class="financial-container">
+
+        <div class="financial-header">
+
+            <h2>Tabelas Financeiras</h2>
+
+            <div class="admin-actions">
+
+                <button class="admin-btn">
+                    + Nova Tabela
+                </button>
+
+                <button class="admin-btn">
+                    Editar
+                </button>
+
+                <button class="danger-btn">
+                    Excluir
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="accordion">
+
+            <button class="accordion-btn">
+                Pagamentos de Clientes
+            </button>
+
+            <div class="accordion-content">
+
+                <table class="finance-table">
+
+                    <thead>
+                        <tr>
+                            <th>Cliente</th>
+                            <th>Valor</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Empresa Alpha</td>
+                            <td>R$ 4.500</td>
+                            <td>Pago</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/navegacao.js">
+document.querySelectorAll(".accordion-btn").forEach(btn => {
+
+    btn.addEventListener("click", () => {
+
+        const content = btn.nextElementSibling;
+
+        content.style.display =
+        content.style.display === "block"
+        ? "none"
+        : "block";
+
+    });
+
+});
+</script>
+
+</body>
+</html>

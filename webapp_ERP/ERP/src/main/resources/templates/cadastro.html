@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - ERP Logística</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="auth-body">
+
+    <div class="auth-container">
+
+        <div class="auth-logo">
+            ERP LOGÍSTICA
+        </div>
+
+        <form id="cadastroForm" class="auth-form">
+
+            <h2>Cadastrar Usuário</h2>
+
+            <div class="input-group">
+                <label>Nome Completo</label>
+                <input
+                    type="text"
+                    name="nomeCompleto"
+                    placeholder="Digite o nome completo"
+                    required>
+            </div>
+
+            <div class="input-group">
+                <label>E-mail</label>
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Digite o e-mail"
+                    required>
+            </div>
+
+            <div class="input-group">
+                <label>Cargo</label>
+
+                <select
+                    name="cargo"
+                    class="form-select"
+                    required>
+
+                    <option value="">
+                        Selecione um cargo
+                    </option>
+
+                    <option value="Cliente">
+                        Cliente
+                    </option>
+
+                    <option value="Operador_logistica">
+                        Operador Logística
+                    </option>
+
+                    <option value="Gestao_operacao">
+                        Gestor Operacional
+                    </option>
+
+                    <option value="Administracao">
+                        Administração
+                    </option>
+
+                    <option value="RH">
+                        RH
+                    </option>
+
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Senha</label>
+                <input
+                    type="password"
+                    name="senha"
+                    placeholder="Digite a senha"
+                    required>
+            </div>
+
+            <div class="input-group">
+                <label>Confirmar Senha</label>
+                <input
+                    type="password"
+                    name="confirmarSenha"
+                    placeholder="Confirme a senha"
+                    required>
+            </div>
+
+            <button type="submit" class="auth-btn" onclick="cadastrarUsuarioJs()">
+                Criar Conta
+            </button>
+
+            <p class="auth-link">
+                Já possui conta?
+                <a href="#" onclick="navegarLogin()">Entrar</a>
+            </p>
+
+        </form>
+
+    </div>
+
+    <script src="/cadastro.js"></script>
+</body>
+</html>
